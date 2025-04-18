@@ -7,9 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const User = require('./models.js');
 const { Schema } = mongoose;
-
-
-
+const token=process.env.TOKEN;
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
